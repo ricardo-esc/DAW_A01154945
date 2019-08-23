@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Laboratorio 4</title>
+    </head>
+    <header>
+        <h1>Laboratorio 4</h1>
+        En la siguiente página se encontraran las respuestas a algunas preguntas importantes acerca de JavaScript y de igual forma unos ejercicios básicos para ver el funcionamiento de esto.  
+        <hr>
+    </header>
+    <body>
+        <p>
+            </p>
+            <ul>
+                <li>¿Qué diferencias y semejanzas hay entre Java y JavaScript?
+                <br><br>JavaScript no es un lenguaje de programación compilado, este es integrado a HTML y es interpretadp. Java es un lenguaje de programación orientado a objetos y JavaScript a objetos. De igual forma en JavaScript no podemos hacer uso de la herencia y poliformismo y no existe la declaración de variables, y una diferencia importante es que en Java el codigo seefectua al momento de compilarse y en JavaScript las referencias a objetos se realizan al momento de la ejecución. Se puede decir que comparten algo de sintaxis pero fuera de eso son diferentes. </li>
+                
+                <br><li>¿Qué métodos tiene el objeto Date? (Menciona al menos 5*)
+                <br><br>Estan getFullYear() que nos devuelve el año con 4 digítos, get Month() que nos devuelve el número de mes, getDate() que nos devuelve el día del mes, getHours() que nos devuelve la hora actual en formato 24 hrs, y el método getMinutes() que nos devuelve los minutos.</li>
+                
+                <br><li>¿Qué métodos tienen los arreglos? (Menciona al menos 5*)
+                <br><br> Tenemos el método concat() que nos permite unir dos o más arreglos, indexOf() el cual busca un elemento dentro del arreglo y devuelve la posición, pop() que eliminar el ultimo elemento del arreglo y devuelce el contenido del mismo, push() el cual añade elementos al arreglo y nos devuelve la nueva longitud y reverse() que nos invierte el orden de los ellemetnos del arreglo.</li>
+                
+                <br><li>¿Cómo se declara una variable con alcance local dentro de una función?<br><br> Utilizamos la palabra "let" despúes el nombre de la variable.</li>
+               
+                <br><li>¿Qué implicaciones tiene utilizar variables globales dentro de funciones? <br><br>El problema es que cualquier función o parte del programa puede tener acceso a ella lo que quiere decir es que su valor puede ser modificado y se puede perder el control de su valor por haberle usado en otra parte del código.</li>
+                
+                <br><li>¿Qué método de String se puede utilizar para buscar patrones con expresiones regulares?¿Para qué podrías utilizar esto en una aplicación web?<br><br>Match ejecuta una busqueda por una coincidencia en una cadena devuelve un array de infromación o null en caso que no haya coincidencia. Search verifica una coincidencia en una cadena. Replace ejecuta una busqueda por una coincidencia en una cadena, reemplaza la subcadena encontrada con la que esta de reemplazo. Split utiliza una expresión regular para poder cortar a una cadena y lo coloca en un array de subcadenas.  </li>
+                  
+            </ul>
+        <hr>
+         <div id = "ejercicios_JavaScript">
+                <p>En los siguientes botones se podran correr los diferentes ejercicios realizados.</p> 
+                <br>
+                <center><button id = "correr1" onclick="correr_funcion1()">Ejercicio 1</button></center>
+                <br>
+                <center><button id = "correr2" onclick="correr_funcion2()">Ejercicio 2</button></center>
+                <br>
+                <center><button id = "correr3" onclick="correr_funcion3()">Ejercicio 3</button></center>
+                <br>
+                <center><button id = "correr4" onclick="correr_funcion4()">Ejercicio 4</button></center>
+                <br>
+                <center><button id = "correr5" onclick="correr_funcion5()">Ejercicio 5</button></center>
+            </div>
+        
+        <script src="lab4.js"></script>
+         <hr>
+  <h3>Bibliografias y Referencias:</h3>
+    <p>Citados de forma especificada en instrucciones de Laboratorio</p>
+    
+    <ul>
+            <li>https://www.gestiopolis.com/diferencias-java-javascript/</li>
+            <li>https://www.digitallearning.es/intro-programacion-js/metodos-date.html</li>
+            <li>Flanagan, D. (2006). JavaScript: the definitive guide. " O'Reilly Media, Inc.".</li>
+            <li>https://tutobasico.com/metodos-arrays-javascript/</li>
+          
+    </ul>
+
+    <hr>
+     </body>
+    <footer>
+       
+    <h3>Personal Info</h3>
+    <p>Ricardo Escobar Gouyonnet <br>A01154945<br>Mail: a01154945@itesm.mx</p>
+
+    </footer>
+    
+        
+</html>
