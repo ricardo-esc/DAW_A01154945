@@ -1,8 +1,4 @@
 /*
-4: 
-Función: promedios. Parámetros: Un arreglo de arreglos de números. Regresa: Un arreglo con los promedios de cada uno de los renglones de la matriz.
-5: 
-Función: inverso. Parámetros: Un número. Regresa: El número con sus dígitos en orden inverso.
 6: 
 Crea una solución para un problema de tu elección (puede ser algo relacionado con tus intereses, alguna problemática que hayas identificado en algún ámbito, un problema de programación que hayas resuelto en otro lenguaje, un problema de la ACM, entre otros). El problema debe estar descrito en un documento HTML, y la solución implementada en JavaScript, utilizando al menos la creación de un objeto, el objeto además de su constructor deben tener al menos 2 métodos. Muestra los resultados en el documento HTML.
 */
@@ -10,14 +6,7 @@ Crea una solución para un problema de tu elección (puede ser algo relacionado 
 function tabla_cuadrados(limite) {
 document.write("Primer Ejercicio:");
    let resultado = "<table> <tbody>";
-    /*
-    resultado += "<tr>";
-    resultado += "<th>"+"N^2"+"</th>";
-    resultado += "<th>"+"N^2"+"</th>";
-    resultado += "<th>"+"N^2"+"</th>";
-    resultado += "<tr>"
-    resultado += "<tr>";
-    */
+    
     for(let i = 1; i <= limite;i++){
             resultado += "<td>";
             resultado += i * 1;
@@ -42,7 +31,8 @@ document.write("Primer Ejercicio:");
             resultado += "</td>";
         }
     resultado += "</tr>";
-    resultado += "</tbody></table>";
+    resultado = "<table border = 3>" + resultado+ "</table>";
+   // resultado += "</tbody></table>";
     return resultado;
 
 }
@@ -138,10 +128,48 @@ function funcion5(){
     }
 }
 
+//Crea tu propia libreria de peliculas
+function creacion_Objeto(){
+    var bandera = "true";
+    var pelicula = Array();
+    var i=0;
+    while(bandera== "true"){
+        pelicula[i] = new Object();
+        pelicula[i].nombre = prompt("Introduce el nombre de la pelicula:");
+        pelicula[i].genero = prompt("Introduce el género");
+        pelicula[i].clasificacion = prompt("Introduce la clasificación: ");
+        bandera = prompt("Deseas agregar otra pelicula?(true o false)");
+        i++;
+    }
+    
+    tabla_peliculas(pelicula);
+}
+
+function tabla_peliculas(pelicula){
+    
+    var tabla = "";
+    tabla = tabla + "<tr>"
+                    +"<th> Película </th>"
+                    +"<th> Género </th>"
+                    +"<th> Clasificación </th>" + "</tr>";
+
+    for (var i = 0; i < pelicula.length; i++) {
+        tabla = tabla + "<tr>"
+                        +"<td>" + pelicula[i].nombre + "</td>"
+                        +"<td>" + pelicula[i].genero+ "</td>"
+                        +"<td>" + pelicula[i].clasificacion + "</td>"
+                        +"</tr>";
+    }
+    
+    tabla="<table border = 2>" + tabla + "</table>";
+    document.write("" + tabla);
+  
+}
+
 function correr_funcion1(){
     let limite_usuario = prompt("Ingresa un numero: ");
     let tabla_personalizada = tabla_cuadrados(limite_usuario);
-    document.write(tabla_personalizada);
+    document.write(""+tabla_personalizada);
 }
 
 function correr_funcion2(){
@@ -160,10 +188,6 @@ function correr_funcion5(){
     funcion5();
 }
 
-/*
-//document.write("hola ");
-//alert("hola");
-let nombre = prompt("còmo te llamas?");
-document.write(nombre);
-document.write("<table>");
-*/
+function correr_funcion6(){
+     creacion_Objeto();
+}
