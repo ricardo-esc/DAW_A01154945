@@ -1,0 +1,31 @@
+.fotosStore
+{
+    height: 300px;
+    width: 400px;
+    
+}
+
+.fotosStore2
+{
+    height: 400px;
+    width: 340px;
+    
+}
+
+header
+{
+    margin: 0 auto;
+    font-size: 20px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    text-align: center;
+}
+
+.amor {
+  background-image: url("wedding.jpg");
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Laboratorio 5</title>
+            <link rel = "stylesheet" type = "text/css" href = "lab5.css">
+    </head>
+    <header>
+        <h1>Laboratorio 5</h1>
+        En la siguiente pagina se podran realizar tres cosas, podremos validar contraseñas, realizar compras de una tienda virtual y saber cual es la probabilidad de que nos vayamos a casar.
+        <hr>
+    </header>
+    
+    <body>
+   
+        <section>
+            <ul>
+                <li>¿Por qué es una buena práctica usar JavaScript para checar que sean válidos los inputs de las formas antes de enviar los datos al servidor?
+                <br><br>Es una buena práctica ya que nos aseguramos que los datos que son enviados a el servidor ya tienen una verficación previa y no se tiene que esperar a que estos sean colaborados por el servidor de una amnera es mas eficiente y barata.</li>
+                
+                <br><li>¿Cómo puedes saltarte la seguridad de validaciones hechas con JavaScript?
+                <br><br>Se desactiva JavaScript en tu navegador.</li>
+                
+                <br><li>Si te puedes saltar la seguridad de las validaciones de JavaScript, entonces ¿por qué la primera pregunta dice que es una buena práctica?
+                <br><br> Existen usuarios que desean que sus datos esetn navegando sin filtro y pueden tener fines muy especificos por la que desen realizar este tipo de acción.</li>
+            </ul>
+        <hr>
+        </section>
+            
+        <div id = "ejercicio1_JavaScript">
+            
+        Ingregsa Contraseña:
+        <br>
+        <input type="contraseña" name="password1" id="contraseña1" oninput="validar()"/> 
+        <br><br>
+        Vuelve a ingresar la Contraseña:
+        <br>
+        <input type="contraseña" name="password2" id="contraseña2"oninput="validar()" /> 
+         <br><br>
+            <center><div id = "mensajes"></div></center>
+            
+        </div>
+        
+         <hr>
+        
+         <div id = "ejercicio2_JavaScriot">
+            <header>Ric-Store</header>
+             
+             <div class = "tienda"><img src="Friends.jpg" class = "fotosStore"><br><br><div id= "disponible"></div><br> Introduce la cantidad:<input type="text" name="friends" id ="articulo1"> <center><button id = "serie" onclick="agregar(1)">Agregar</button></center> </div>
+             
+             <div class = "tienda"><img src="HarryPotter.jpg" class = "fotosStore2"><br><br><div id= "disponible2"></div><br> Introduce la cantidad:<input type="text" name="harrypotter" id ="articulo2"> <center><button id = "pelicula" onclick="agregar(2)">Agregar</button></center> </div>
+             
+             <div class = "tienda"><img src="Iphone.jpg" class = "fotosStore2"><br><br> <div id= "disponible3"></div><br>Introduce la cantidad:<input type="text" name="iphone" id ="articulo3"> <center><button id = "celular" onclick="agregar(3)">Agregar</button></center> </div>
+               
+            
+            
+        </div>
+        
+       <h3>Lista de Productos y Precios</h3>
+        <br>
+        
+        <center><div id = "subtotal"></div></center>
+            
+            <br>
+        <center><div id = "total"></div></center>
+            
+     
+            <hr>
+        <div class = amor>
+        <header> Realiza la siguiente encuesta para saber la posibilidad que te vayas a casar: </header>
+            <br><br>
+            <div id = "name">Introduce tu Nombre:<input type="text" name="nombrecompleto" id ="nombre"> </div>
+            <br><br>
+            <div id = "age">Introduce tu Edad:<input type="text" name="edad" id ="edad"> </div>
+            <br><br>
+            <div id = "relationships">Introduce 1 si nunca has tenido una relación, 2 si has tenido de 2-4 y 3 si has tenido más:<input type="text" name="relaciones" id ="relaciones"> </div>
+            <br><br>
+        <center><button id = "tests" onclick="test()">Realizar Prueba</button>
+        <br><br>
+        <div id = resultado>  </div></center>
+           </div>
+                   <hr>
+        <div id = "bibliografias">
+            <h3>Bibliografias y Referencias:</h3>
+            <p>Citados de forma especificada en instrucciones de Laboratorio</p>
+    
+            <ul>
+            <li>https://www.rosersantisimo.net/blog/2014/09/validacion-de-formularios-del-lado-del-cliente-javascript-vs-html5.html/</li>    
+            </ul>
+            </div>
+        
+               <script src="laboratorio5.js"></script>
+     </body>
+    
+    <footer>
+       
+    <h3>Personal Info</h3>
+    <p>Ricardo Escobar Gouyonnet <br>A01154945<br>Mail: a01154945@itesm.mx</p>
+
+    </footer>
+    
+        
+</html>
