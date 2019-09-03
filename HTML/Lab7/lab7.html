@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Laboratorio 7</title>
+        <link rel = "stylesheet" type = "text/css" href = "foundation.css">
+    </head>
+    <body>
+        <header >
+            <h1>Laboratorio 6</h1>
+            En el siguiente laboratorio se usara el framework FOUNDATION para experimentar y decidir cual es el mejor para el proyecto. Se usura información acerca de un perro toda la información obtenida proviene de una página de internet https://www.hillspet.com.mx/dog-care/dog-breeds/welsh-corgi-pembroke, no me hago pasar por dueño de la información y si se esta copiando en el archivo es para porbar los estilos y funciones pedidos en el laboratorio. 
+        </header>
+        
+        <article>
+            <br><br>
+          Si pasas encima con el mouse por este parrafo se cambiara el estilo.<br><br>
+            <div id="clic" onmouseover="cambiarestilo()", class="default-primary-color">
+                Los Corgi galés de Pembroke son inmediatamente identificables por su corta estatura, orejas erguidas y cara de zorro.
+
+            Por lo general la cola se corta al ras, pero algunos cachorros nacen sin cola. Además de la obvia diferencia en la cola, los Pembroke no son tan largo o de huesos tan pesados como los Cardina Welsh Corgi.
+            </div>
+           <br><br>
+            
+            Los Corgi galés de Pembroke se consideran condrodisplásticos, esto es, tienen la característica de tener las patas arqueadas y tendencia a los problemas de lomo. Un poco más largos que altos, tienen un lomo recto y no son extremos en ningún área. Los adultos miden aproximadamente 10 a 12 pulgadas de alto y pesan entre 23 a 28 libras (10 a 13 kilogramos). Alcanzan su tamaño de adultos al año de edad pero algunos se siguen a completando hasta los dos e inclusive tres años.
+            
+            <p><strong>Introduce un caracter para cambiar el estilo del parrafo</strong></p>
+            <input type="text" id="estilo" onkeypress="cambiarestilo2()" >
+
+            <div id = "key" class="dark-primary-color">
+                <br>
+                Los Corgi tienen un manto a prueba de la intemperie - Doble pero corto. El color va desde rojo intenso o amarillo-marrón hasta negro o sable con destellos blancos. Los negros a menudo tienen blanco y canelaado para hacerlos tri-color con cabezas que varían de rojo al negro. Ocasionalmente aparece un Corgi esponjoso en una camada. Esos cachorros tienen un pelaje más largo, suave y esponjoso que el típico. Aunque esos cachorros hacen mascotas maravillosas, ese pelaje no es lo deseado en una exhibió.
+            </div>
+            <br><br>
+            Personalidad:
+            Los  Corgi galés de Pembroke son conocidos por su ágil inteligencia y contundente voluntad: Son perros activos y animados que no quieren que se les deje de prestar atención. En sus mentes, son perros grandes en cuerpos pequeños.
+
+            Aún así estos perros pueden manejar ganado mucho más grande que ellos, y para hacerlo usan la velocidad, un mordisco rápido y gran determinación. Como perros de granja en general, los Corgi sin duda cazaban alimañas así como pastoreaban el ganado. Los Corgi necesitan ejercicio y entrenamiento con mano firme pero amable para sacar lo mejor de sus talentos.
+            
+            <br><br>
+            <div id="ayuda" onmouseover="ayuda()" class="light-primary-color"> 
+            <strong>Ahora arrastra la siguiente foto al siguiente cuadro:</strong>
+            <br><br>
+            
+              <img id="drag1" src="corgi1.png" draggable="true" ondragstart="drag(event)" width="150" height="160">
+
+            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+            <br>
+            </div>
+           
+           
+            <div class ="letras" >
+                
+            Los Corgi pueden ser propensos al labrado excesivo y a excavar o mordisquear si se les deja solos mucho tiempo o no se ejercitan suficiente. Quieren ser parte de la familia y no les gusta que los dejen en sus jaulas. La mayoría de los Corgi están bien con otras mascotas y con niños si se les cría juntos. tenga cuidado ya que en ocasiones persiguen y mordisquean los talones de los niños que corren por sus instintos de pastoreo.
+
+            Viviendo con:
+            Los  Corgi galés de Pembroke son pequeños perros robustos:
+
+            Solamente requieren un rápido acicalamiento semanal excepto en tiempo de muda de pelo. Se les necesita cuidar de no desarrollar obesidad. Estos perros son fáciles de cuidar y les va bien con una mínima cantidad de comida. El peso de más puede ser una tensión adicional en su larga baja espalda.
+            <br><br>
+            <strong>Presiona el boton para generar una foto despues de 4 segundos</strong>
+            <br><br>
+            <center><button onclick="setTimeout(agregarfoto, 4000);">Presiona!</button></center>
+            
+            <div id= "fotos"></div>
+                
+            </div>
+            
+            <hr>
+            <section >
+                
+                 <ul>
+                <li>Describe Material design
+                <br><br>Material Design es un lenguaje visual que sintetiza los principios de un buen diseño con la innovacion de la tecnológia y ciencia.</li>
+                
+
+            </ul>
+            </section>
+            
+        </article>
+        <hr>
+         <div id = "bibliografias">
+                <h3>Bibliografias y Referencias:</h3>
+                <p>Citados de forma especificada en instrucciones de Laboratorio</p>
+
+                <ul>
+                <li>https://foundation.zurb.com/sites/download.html//</li>
+                    <li>https://material.io/design/introduction/</li>
+            
+                </ul>
+            </div>
+        <hr>
+         <footer>
+       
+    <h3>Personal Info</h3>
+    <p>Ricardo Escobar Gouyonnet <br>A01154945<br>Mail: a01154945@itesm.mx</p>
+
+    </footer>
+    
+    </body>
+    
+
+
+    <script type="text/javascript" src="lab7.js"></script>
+</html>
