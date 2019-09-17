@@ -1,0 +1,78 @@
+
+<body>
+  <div class="container">
+  <header><h1>Laboratorio 10 </h1></header>
+  <section>
+    En el siguiente laboratorio se evaluara que todo el codigo PHP este separado del HTML y que se puedan validar formularios en PHP. Por ultimo se contestan unas preguntas acerca de PHP.
+  </section>
+
+  <form method="POST" action="controller.php">
+
+    <p>Llena el siguiente formulario si te interesa saber cual es la probabilidad de que te vayas a casar.</p>
+
+    <label for="name">Ingresa tu nombre completo:</label>
+    <input type="text" name="nombre">
+
+    <label for="edad">Ingresa tu edad:</label>
+    <input type="number" name="edad" >
+
+    <label for="name">Selecciona 1 si nunca has tenido pareja, 2 si has tenido de una a tres relaciones y 3 si has tenido mas de tres relaciones:</label>
+    <br>
+
+    <label>
+        <input class="with-gap" name="option" type="radio" value="1" />
+        <span>1</span>
+    </label>
+
+      <br>
+
+    <label>
+        <input class="with-gap" name="option" type="radio" value="2" />
+        <span>2</span>
+    </label>
+
+      <br>
+
+    <label>
+        <input class="with-gap" name="option" type="radio" value="3" />
+        <span>3</span>
+    </label>
+
+    <br><br>
+    <input type="submit" name="calcular" value="Calcular" id="calcular"/>
+
+  </form>
+
+  <section>
+    <h3>Preguntas</h3>
+
+  <ul>
+                <li>¿Por qué es una buena práctica separar el controlador de la vista?
+                <br><br> Más seguro para proteger la infromación y de igual forma nos permite utilizar las funciones establecidas en otras partes del codigo.</li>
+                
+                <br><li>Aparte de los arreglos $_POST y $_GET, ¿qué otros arreglos están predefinidos en php y cuál es su función?
+                <br><br>$_COOKIE variables pasadas al script por medio de HTTp cookies, $_SESSION contiene variables que estan disponibles en la sesiona ctual, $_REQUEST tiene por defecto los valores de get post y cookie.</li>
+                
+                <br><li>Explora las funciones de php, y describe 2 que no hayas visto en otro lenguaje y que llamen tu atención.
+                  Use una funcion establecida que checa que en un string solo vengan letras y el de un email que verfica que tenga el formato de uno.
+                <br><br> </li>
+                
+                <br><li>¿Qué es XSS y cómo se puede prevenir?<br><br> </li>
+              Cross-site Scripting, sucede cuando se pasa en un formculario un comando de HTML o Java Script y altera la funcionalidad de la pagina, se previene con pasar el campo recibido a textoplano.
+                  </li>
+                  
+            </ul>
+
+          <h3>Bibliografias y Referencias:</h3>
+           <p>Citados de forma especificada en instrucciones de Laboratorio</p>
+    
+            <ul>
+            <li>https://www.php.net/manual/es/reserved.variables.cookies.php</li>
+            <li>https://www.w3schools.com/php/php_forms.asp</li>
+            <li>Vogt, P., Nentwich, F., Jovanovic, N., Kirda, E., Kruegel, C., & Vigna, G. (2007, February). Cross Site Scripting Prevention with Dynamic Data Tainting and Static Analysis. In NDSS (Vol. 2007, p. 12).</li>
+            
+          
+    </ul>
+  </section>
+</div>
+  </body>
