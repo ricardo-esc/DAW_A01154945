@@ -1,0 +1,1 @@
+Delete from Materiales where Clave = 1000 and Costo = 1000
