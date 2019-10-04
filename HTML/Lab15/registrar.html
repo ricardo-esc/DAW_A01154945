@@ -1,0 +1,44 @@
+<main class="content center">
+  <h4>Registrar Meme</h4>
+<br/>
+</main>
+
+<form method="POST" action="index.php" enctype="multipart/form-data">
+    <div class="row">
+    
+        <div class="row ">
+            <div class="input-field col s12 ">
+                <?php if(isset($error_genero)): ?>
+                    <span class="red-text">*<?=$error_genero?></span>
+                <?php endif; ?>
+                    <label>Introduce el Genero: </label>
+                    <input type="text" name="genero">
+            </div>
+        </div>
+        
+        <div class="row ">
+            <div class="input-field col s12 ">
+                <?php if(isset($error_descripcion)): ?>
+                    <span class="red-text">*<?=$error_descripcion?></span>
+                <?php endif; ?>
+                    <label>Introduce la Descripcion: </label>
+                    <input type="text" name="descripcion">
+            </div>
+        </div>
+        
+        <div class="row ">
+            <div class="input-field col s12 ">
+                <?php if(isset($error_imagen)): ?>
+                    <span class="red-text">*<?=$error_imagen?></span>
+                <?php endif; ?>
+                    <label>Introduce la direccion de la imagen: </label>
+                    <input type="text" name="imagen" id="imagen">
+            </div>
+        </div>
+        
+           
+    </div>
+    
+                    <br>
+<input class="waves-effect orange darken-1 btn" type="submit" name="enviar" value="enviar">
+</form>
