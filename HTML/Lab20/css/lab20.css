@@ -1,0 +1,27 @@
+.content-box{
+    width : 240px;
+    height : 60px;
+    border-radius: 6px;
+    background-color: red;
+    padding: 60px;
+}
+
+.content-before{
+    font-size:40px;
+    font-family:arial;
+    color:yellow;
+    text-align: center;
+    line-height: 60px;
+    
+}
+
+.content-after{
+    display: none;
+    font-size:40px;
+    font-family:arial;
+    color:yellow;
+    text-align: left;
+    line-height: 16px;
+    opacity:0,
+        
+}
